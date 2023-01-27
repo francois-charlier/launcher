@@ -21,7 +21,7 @@ public class BlockMelon extends Block
      */
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return Items.diamond;
+        return Items.iron_ingot;
     }
 
     /**
