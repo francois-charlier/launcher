@@ -202,6 +202,11 @@ public class Items
     public static final Item prismarine_crystals;
     public static final Item banner;
 
+    //new
+    public static final Item jaunassite;
+    public static final Item jaunassite_sword;
+    //new
+
     private static Item getRegisteredItem(String name)
     {
         return (Item)Item.itemRegistry.getObject(new ResourceLocation(name));
@@ -402,6 +407,11 @@ public class Items
             prismarine_shard = getRegisteredItem("prismarine_shard");
             prismarine_crystals = getRegisteredItem("prismarine_crystals");
             banner = getRegisteredItem("banner");
+
+            //new
+            jaunassite = getRegisteredItem("jaunassite");
+            jaunassite_sword = getRegisteredItem("jaunassite_sword");
+            //new
         }
     }
 }

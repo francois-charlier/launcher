@@ -973,6 +973,11 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.chest, "chest");
         this.registerBlock(Blocks.trapped_chest, "trapped_chest");
         this.registerBlock(Blocks.ender_chest, "ender_chest");
+
+        //new items
+        this.registerBlock(Blocks.jaunasse, "jaunasse");
+        //new items
+
         this.registerItem(Items.iron_shovel, "iron_shovel");
         this.registerItem(Items.iron_pickaxe, "iron_pickaxe");
         this.registerItem(Items.iron_axe, "iron_axe");
@@ -1225,6 +1230,11 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.brown_mushroom_block, BlockHugeMushroom.EnumType.ALL_INSIDE.getMetadata(), "brown_mushroom_block");
         this.registerBlock(Blocks.red_mushroom_block, BlockHugeMushroom.EnumType.ALL_INSIDE.getMetadata(), "red_mushroom_block");
         this.registerBlock(Blocks.dragon_egg, "dragon_egg");
+
+        //new
+        this.registerItem(Items.jaunassite, "jaunassite");
+        this.registerItem(Items.jaunassite_sword, "jaunassite_sword");
+        //new
 
         if (Reflector.ModelLoader_onRegisterItems.exists())
         {

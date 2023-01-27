@@ -63,6 +63,7 @@ import net.minecraft.network.play.server.S3FPacketCustomPayload;
 import net.minecraft.network.play.server.S42PacketCombatEvent;
 import net.minecraft.network.play.server.S43PacketCamera;
 import net.minecraft.network.play.server.S48PacketResourcePackSend;
+import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.scoreboard.IScoreObjectiveCriteria;
 import net.minecraft.scoreboard.Score;
@@ -426,6 +427,21 @@ public class EntityPlayerMP extends EntityPlayer implements ICrafting
             {
                 this.updateBiomesExplored();
             }
+            //Effet sur armure
+            if (this.ticksExisted % 60 == 0)
+            {
+                EntityPlayer player = (EntityPlayer) this;
+                ItemStack helmet = player.getEquipmentInSlot(4);
+                ItemStack chestplate = player.getEquipmentInSlot(3);
+                ItemStack leggings = player.getEquipmentInSlot(2);
+                ItemStack boots = player.getEquipmentInSlot(1);
+
+                if(helmet != null && helmet.getItem().equals(Items.diamond_helmet) && chestplate != null && chestplate.getItem().equals(Items.diamond_chestplate))
+                {
+                    player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 90, 2));
+                }
+            }
+
         }
         catch (Throwable throwable)
         {

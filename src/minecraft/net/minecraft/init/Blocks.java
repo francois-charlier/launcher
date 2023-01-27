@@ -235,6 +235,10 @@ public class Blocks
     public static final BlockSlab double_stone_slab2;
     public static final BlockSlab stone_slab2;
 
+    //new items
+    public static final Block jaunasse;
+    //new items
+
     /**
      * Returns the Block in the blockRegistry with the specified name.
      *  
@@ -451,6 +455,9 @@ public class Blocks
             red_sandstone_stairs = getRegisteredBlock("red_sandstone_stairs");
             double_stone_slab2 = (BlockSlab)getRegisteredBlock("double_stone_slab2");
             stone_slab2 = (BlockSlab)getRegisteredBlock("stone_slab2");
+            //new blocks
+            jaunasse = getRegisteredBlock("jaunasse");
+            //new blocks
         }
     }
 }

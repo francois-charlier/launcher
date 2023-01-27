@@ -762,6 +762,11 @@ public class Item
         })).setUnlocalizedName("redSandStone"));
         registerItemBlock(Blocks.red_sandstone_stairs);
         registerItemBlock(Blocks.stone_slab2, (new ItemSlab(Blocks.stone_slab2, Blocks.stone_slab2, Blocks.double_stone_slab2)).setUnlocalizedName("stoneSlab2"));
+
+        //new items
+        registerItemBlock(Blocks.jaunasse);
+        //new items
+
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));
         registerItem(258, "iron_axe", (new ItemAxe(Item.ToolMaterial.IRON)).setUnlocalizedName("hatchetIron"));
@@ -950,6 +955,11 @@ public class Item
         registerItem(2265, "record_ward", (new ItemRecord("ward")).setUnlocalizedName("record"));
         registerItem(2266, "record_11", (new ItemRecord("11")).setUnlocalizedName("record"));
         registerItem(2267, "record_wait", (new ItemRecord("wait")).setUnlocalizedName("record"));
+
+        //new items
+        registerItem(2268, "jaunassite", (new Item()).setUnlocalizedName("jaunassite").setCreativeTab(CreativeTabs.tabMaterials));
+        registerItem(2269, "jaunassite_sword", (new ItemSword(ToolMaterial.JAUNASSITE)).setUnlocalizedName("jaunassite_sword"));
+        //new items
     }
 
     /**
@@ -985,7 +995,9 @@ public class Item
         STONE(1, 131, 4.0F, 1.0F, 5),
         IRON(2, 250, 6.0F, 2.0F, 14),
         EMERALD(3, 1561, 8.0F, 3.0F, 10),
-        GOLD(0, 32, 12.0F, 0.0F, 22);
+        GOLD(0, 32, 12.0F, 0.0F, 22),
+        JAUNASSITE(4, 1800, 12.0F, 5.0F, 10)
+        ;
 
         private final int harvestLevel;
         private final int maxUses;
@@ -1029,7 +1041,7 @@ public class Item
 
         public Item getRepairItem()
         {
-            return this == WOOD ? Item.getItemFromBlock(Blocks.planks) : (this == STONE ? Item.getItemFromBlock(Blocks.cobblestone) : (this == GOLD ? Items.gold_ingot : (this == IRON ? Items.iron_ingot : (this == EMERALD ? Items.diamond : null))));
+            return this == WOOD ? Item.getItemFromBlock(Blocks.planks) : (this == STONE ? Item.getItemFromBlock(Blocks.cobblestone) : (this == GOLD ? Items.gold_ingot : (this == IRON ? Items.iron_ingot : (this == EMERALD ? Items.diamond : (this == JAUNASSITE ? Items.jaunassite :  null)))));
         }
     }
 }

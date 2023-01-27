@@ -56,6 +56,9 @@ public class BiomeDecorator
     protected WorldGenerator redstoneGen;
     protected WorldGenerator diamondGen;
 
+    /** New **/
+    protected WorldGenerator jaunasseGen;
+    /** New **/
     /** Field that holds Lapis WorldGenMinable */
     protected WorldGenerator lapisGen;
     protected WorldGenFlowers yellowFlowerGen = new WorldGenFlowers(Blocks.yellow_flower, BlockFlower.EnumFlowerType.DANDELION);
@@ -171,6 +174,9 @@ public class BiomeDecorator
             this.redstoneGen = new WorldGenMinable(Blocks.redstone_ore.getDefaultState(), this.chunkProviderSettings.redstoneSize);
             this.diamondGen = new WorldGenMinable(Blocks.diamond_ore.getDefaultState(), this.chunkProviderSettings.diamondSize);
             this.lapisGen = new WorldGenMinable(Blocks.lapis_ore.getDefaultState(), this.chunkProviderSettings.lapisSize);
+            //news
+            this.jaunasseGen = new WorldGenMinable(Blocks.jaunasse.getDefaultState(), 4);
+            //news
             this.genDecorations(biome);
             this.currentWorld = null;
             this.randomGenerator = null;
@@ -491,5 +497,8 @@ public class BiomeDecorator
         this.genStandardOre1(this.chunkProviderSettings.redstoneCount, this.redstoneGen, this.chunkProviderSettings.redstoneMinHeight, this.chunkProviderSettings.redstoneMaxHeight);
         this.genStandardOre1(this.chunkProviderSettings.diamondCount, this.diamondGen, this.chunkProviderSettings.diamondMinHeight, this.chunkProviderSettings.diamondMaxHeight);
         this.genStandardOre2(this.chunkProviderSettings.lapisCount, this.lapisGen, this.chunkProviderSettings.lapisCenterHeight, this.chunkProviderSettings.lapisSpread);
+        //new
+        this.genStandardOre1(3, this.jaunasseGen, 0, 16);
+        //new
     }
 }
