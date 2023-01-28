@@ -238,7 +238,9 @@ public class ItemArmor extends Item
         CHAIN("chainmail", 15, new int[]{2, 5, 4, 1}, 12),
         IRON("iron", 15, new int[]{2, 6, 5, 2}, 9),
         GOLD("gold", 7, new int[]{2, 5, 3, 1}, 25),
-        DIAMOND("diamond", 33, new int[]{3, 8, 6, 3}, 10);
+        DIAMOND("diamond", 33, new int[]{3, 8, 6, 3}, 10),
+        JAUNASSITE("jaunassite", 100, new int[]{5, 10, 8, 5}, 10)
+        ;
 
         private final String name;
         private final int maxDamageFactor;
@@ -270,7 +272,7 @@ public class ItemArmor extends Item
 
         public Item getRepairItem()
         {
-            return this == LEATHER ? Items.leather : (this == CHAIN ? Items.iron_ingot : (this == GOLD ? Items.gold_ingot : (this == IRON ? Items.iron_ingot : (this == DIAMOND ? Items.diamond : null))));
+            return this == LEATHER ? Items.leather : (this == JAUNASSITE ? Items.jaunassite : (this == CHAIN ? Items.iron_ingot : (this == GOLD ? Items.gold_ingot : (this == IRON ? Items.iron_ingot : (this == DIAMOND ? Items.diamond : null)))));
         }
 
         public String getName()

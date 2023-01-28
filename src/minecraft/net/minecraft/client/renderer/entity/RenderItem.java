@@ -1234,6 +1234,10 @@ public class RenderItem implements IResourceManagerReloadListener
         //new
         this.registerItem(Items.jaunassite, "jaunassite");
         this.registerItem(Items.jaunassite_sword, "jaunassite_sword");
+        this.registerItem(Items.jaunassite_boots, "jaunassite_boots");
+        this.registerItem(Items.jaunassite_chestplate, "jaunassite_chestplate");
+        this.registerItem(Items.jaunassite_leggings, "jaunassite_leggings");
+        this.registerItem(Items.jaunassite_helmet, "jaunassite_helmet");
         //new
 
         if (Reflector.ModelLoader_onRegisterItems.exists())

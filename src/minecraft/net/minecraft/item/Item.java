@@ -959,6 +959,10 @@ public class Item
         //new items
         registerItem(2268, "jaunassite", (new Item()).setUnlocalizedName("jaunassite").setCreativeTab(CreativeTabs.tabMaterials));
         registerItem(2269, "jaunassite_sword", (new ItemSword(ToolMaterial.JAUNASSITE)).setUnlocalizedName("jaunassite_sword"));
+        registerItem(2270, "jaunassite_helmet", (new ItemArmor(ItemArmor.ArmorMaterial.JAUNASSITE, 5, 0)).setUnlocalizedName("jaunassite_helmet"));
+        registerItem(2271, "jaunassite_chestplate", (new ItemArmor(ItemArmor.ArmorMaterial.JAUNASSITE, 5, 1)).setUnlocalizedName("jaunassite_chestplate"));
+        registerItem(2272, "jaunassite_leggings", (new ItemArmor(ItemArmor.ArmorMaterial.JAUNASSITE, 5, 2)).setUnlocalizedName("jaunassite_leggings"));
+        registerItem(2273, "jaunassite_boots", (new ItemArmor(ItemArmor.ArmorMaterial.JAUNASSITE, 5, 3)).setUnlocalizedName("jaunassite_boots"));
         //new items
     }
 

@@ -205,6 +205,10 @@ public class Items
     //new
     public static final Item jaunassite;
     public static final Item jaunassite_sword;
+    public static final ItemArmor jaunassite_boots;
+    public static final ItemArmor jaunassite_chestplate;
+    public static final ItemArmor jaunassite_leggings;
+    public static final ItemArmor jaunassite_helmet;
     //new
 
     private static Item getRegisteredItem(String name)
@@ -411,6 +415,10 @@ public class Items
             //new
             jaunassite = getRegisteredItem("jaunassite");
             jaunassite_sword = getRegisteredItem("jaunassite_sword");
+            jaunassite_boots = (ItemArmor)getRegisteredItem("jaunassite_boots");
+            jaunassite_helmet = (ItemArmor)getRegisteredItem("jaunassite_helmet");
+            jaunassite_chestplate = (ItemArmor)getRegisteredItem("jaunassite_chestplate");
+            jaunassite_leggings = (ItemArmor)getRegisteredItem("jaunassite_leggings");
             //new
         }
     }

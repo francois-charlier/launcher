@@ -972,6 +972,10 @@ public abstract class EntityLiving extends EntityLivingBase
                 {
                     return Items.diamond_helmet;
                 }
+                else if (itemTier == 5)
+                {
+                    return Items.jaunassite_helmet;
+                }
 
             case 3:
                 if (itemTier == 0)
@@ -993,6 +997,10 @@ public abstract class EntityLiving extends EntityLivingBase
                 else if (itemTier == 4)
                 {
                     return Items.diamond_chestplate;
+                }
+                else if (itemTier == 5)
+                {
+                    return Items.jaunassite_chestplate;
                 }
 
             case 2:
@@ -1016,6 +1024,10 @@ public abstract class EntityLiving extends EntityLivingBase
                 {
                     return Items.diamond_leggings;
                 }
+                else if (itemTier == 5)
+                {
+                    return Items.jaunassite_leggings;
+                }
 
             case 1:
                 if (itemTier == 0)
@@ -1037,6 +1049,10 @@ public abstract class EntityLiving extends EntityLivingBase
                 else if (itemTier == 4)
                 {
                     return Items.diamond_boots;
+                }
+                else if (itemTier == 5)
+                {
+                    return Items.jaunassite_boots;
                 }
 
             default:
