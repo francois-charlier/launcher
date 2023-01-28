@@ -204,6 +204,7 @@ public class Items
 
     //new
     public static final Item jaunassite;
+    public static final Item carrot_force;
     public static final Item jaunassite_sword;
     public static final ItemArmor jaunassite_boots;
     public static final ItemArmor jaunassite_chestplate;
@@ -414,6 +415,7 @@ public class Items
 
             //new
             jaunassite = getRegisteredItem("jaunassite");
+            carrot_force = getRegisteredItem("carrot_force");
             jaunassite_sword = getRegisteredItem("jaunassite_sword");
             jaunassite_boots = (ItemArmor)getRegisteredItem("jaunassite_boots");
             jaunassite_helmet = (ItemArmor)getRegisteredItem("jaunassite_helmet");

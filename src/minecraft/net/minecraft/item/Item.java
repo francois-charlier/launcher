@@ -963,6 +963,7 @@ public class Item
         registerItem(2271, "jaunassite_chestplate", (new ItemArmor(ItemArmor.ArmorMaterial.JAUNASSITE, 5, 1)).setUnlocalizedName("jaunassite_chestplate"));
         registerItem(2272, "jaunassite_leggings", (new ItemArmor(ItemArmor.ArmorMaterial.JAUNASSITE, 5, 2)).setUnlocalizedName("jaunassite_leggings"));
         registerItem(2273, "jaunassite_boots", (new ItemArmor(ItemArmor.ArmorMaterial.JAUNASSITE, 5, 3)).setUnlocalizedName("jaunassite_boots"));
+        registerItem(2274, "carrot_force", (new ItemFood(4, 0.1F, false)).setAlwaysEdible().setPotionEffect(Potion.damageBoost.id, 600, 0, 1.0F).setUnlocalizedName("carrot_force"));
         //new items
     }
 
